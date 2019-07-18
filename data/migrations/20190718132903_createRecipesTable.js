@@ -8,7 +8,7 @@ exports.up = function(knex) {
     .createTable("ingredients", table => {
       table.increments();
       table.text("ingredient_name", 128).notNullable();
-      table.text("ingrenpxdient_unit", 128).notNullable();
+      table.text("ingredient_unit", 128).notNullable();
     })
     .createTable("recipe_instructions", table => {
       table.increments();
